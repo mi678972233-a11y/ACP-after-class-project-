@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My School</title>
+</head>
+<body>
+    <h1>Fauji Foundation School</h1>
+    <p><b>Address:</b> Street 12, City, Country</p>
+    <p><b>Total Students:</b> 40</p>
+    <p><b>Streams Offered:</b> Science, Commerce, Arts,etc</p>
+    <p><b>Educational Board:</b> Federal Board</p>
+
+    <h2>About Our School</h2>
+    <p>This school provides quality education and encourages students to take part in extracurricular activities.</p>
+
+    <p>This was all about my <b>school</b>, <i>I Hope you will love it</i>, and <u>wish </u>to join my school.</p>
+</body>
+</html>
