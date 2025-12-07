@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fauji Foundation College For Boys</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <h1>Fauji Foundation College For Boys</h1>
+    <table border="5" bgcolor="lightgreen">
+        <tr>
+            <th>Sr. No</th>
+            <th>Department</th>
+            <th>Head of Department</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Pre-Medical</td>
+            <td>Sir ***</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pre-Engineering</td>
+            <td>Sir ***</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ICS</td>
+            <td>Sir ***</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>FA</td>
+            <td>Sir ***</td>
+        </tr>
+    </table>
+
+</body>
+</html>
