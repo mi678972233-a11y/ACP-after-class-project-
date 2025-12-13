@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image, Video, Audio, Iframe</title>
+</head>
+<body>
+
+  <h2>Image</h2>
+  <img src="CAT.jpg" alt="Sample Image" width="300">
+
+  <h2>Video</h2>
+  <video width="320" controls>
+    <source src="Kitten meows.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="kitten sound.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <h2>Iframe</h2>
+  <iframe src='https://cats.com/' width="400" height="400"></iframe>
+
+</body>
+</html>
