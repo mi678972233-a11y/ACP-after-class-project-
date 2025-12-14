@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>replit</title>
+    </head>
+    <body>
+        <header>
+            <h1>Navigational Links</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2>Facts About My College</h2>
+                    <p>
+Fauji Foundation schools are a large network in Pakistan, run by a charity for armed forces families. They offer affordable, disciplined, and quality education in English. While they serve military children first, they are open to civilians, mixing different backgrounds. The schools follow both Pakistani and British curricula. Known for good facilities and strong management, they are funded by the Foundation's businesses and have a famous alumni network.
+                    </p>
+                </article>
+            </section>
+            <figure>
+                <img src="College.jpg"/>
+                <figcaption>My College</figcaption>
+            </figure>
+            <video src="college vedio.mp4" controls>
+            </video>
+        </main>
+    </body>
+</html>
