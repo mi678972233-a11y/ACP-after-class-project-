@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                text-align: center;
+                font-family: monospace;
+            }
+            #text{
+                text-shadow: 2px 2px 1px #CC5500;
+                /* (right-offset)px (left-offset)px (fade)px color */
+            }
+            #indent{
+                text-indent: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="text">Welcome To Codingal</h1>
+       <h1 id ="box">Codingal is a platform where students learn coding in a fun and easy way.</h1>
+       <div>
+        <p>Let’s learn CSS text styling.</p>
+        <p id="indent">Lets start now</p>
+       </div>
+    </body>
+</html>
