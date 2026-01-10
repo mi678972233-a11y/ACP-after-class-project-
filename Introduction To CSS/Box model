@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model Example</title>
+
+    <style type="text/css">
+        .example1 {
+            width: 220px;
+            background-color: yellow;
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+        }
+
+        .example2 {
+            width: 220px;
+            background-color: green;
+            padding: 50px;
+            border: 5px solid black;
+            margin: 40px 20px;
+        }
+
+        hr {
+            height: 5px;
+            background-color: red;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Model Example</h1>
+
+    <hr>
+
+    <p class="example1">Welcome To FFCB</p>
+
+    <hr style="width: 10%; height: 10px; background-color: blue; border: none;">
+
+    <p class="example2">FFCB college is a place of learning and growth.The teachers are helpful and guide us well.
+It has clean classrooms and a peaceful environment.
+I enjoy studying and spending time with friends there.
+</p>
+
+    <hr style="width: 20%; height: 1px; background-color: blue; border: none;">
+</body>
+</html>
