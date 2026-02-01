@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Bootstrap Slider</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .slider-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Jumbotron -->
+  <div class="p-5 mb-4 bg-light rounded-3 text-center">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Custom Slider Example</h1>
+      <p class="col-md-8 fs-4 mx-auto">A simple slider using Bootstrap utilities .</p>
+    </div>
+  </div>
+
+  <!-- Slider (Static) -->
+  <div class="container text-center mb-4">
+    <!-- Image -->
+    <img src="https://via.placeholder.com/1200x400?text=Slide+1" class="slider-img mb-3" alt="Slide">
+
+    <!-- Slide Info with Badge -->
+    <h5>Slide 1 <span class="badge bg-primary">New</span></h5>
+
+    <!-- Progress Bar (Static) -->
+    <div class="progress mb-3" style="height: 20px;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 33%"></div>
+    </div>
+
+    <!-- Buttons (Optional, won't work without JS) -->
+    <div>
+      <button class="btn btn-secondary me-2" disabled>Previous</button>
+      <button class="btn btn-secondary" disabled>Next</button>
+    </div>
+  </div>
+</body>
+</html>
