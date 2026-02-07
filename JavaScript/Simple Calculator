@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Variables</h1>
+    <p>Operations on Two Numbers</p>
+
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+
+    <script>
+      var num1 = 5;
+      var num2 = 6;
+
+      var add = num1 + num2;
+      var sub = num1 - num2;
+      var mul = num1 * num2;
+      var div = num1 / num2;
+
+      document.getElementById("add").innerHTML = "Addition: " + add;
+      document.getElementById("sub").innerHTML = "Subtraction: " + sub;
+      document.getElementById("mul").innerHTML = "Multiplication: " + mul;
+      document.getElementById("div").innerHTML = "Division: " + div;
+    </script>
+  </body>
+</html>
