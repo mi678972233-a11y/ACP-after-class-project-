@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array with Loop</title>
+    </head>
+    <body>
+        <h2>JavaScript Array and For Loop</h2>
+        <p id="demo"></p>
+
+        <script>
+            // Array
+            var subjects = ["Math", "Science", "English", "Computer"];
+
+            // Variable to store result
+            var text = "";
+            var i;
+
+            // For loop
+            for (i = 0; i < subjects.length; i++) {
+                text += subjects[i] + "<br>";
+            }
+
+            // Display output
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>
