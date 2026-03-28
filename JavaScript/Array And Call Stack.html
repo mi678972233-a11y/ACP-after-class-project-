@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array, Object & Call Stack Project</title>
+</head>
+<body>
+
+    <h2>JavaScript Project</h2>
+    <button onclick="runProject()">Run Project</button>
+
+    <h3>Output:</h3>
+    <p id="output"></p>
+
+    <script>
+        function runProject() {
+
+            let output = "";
+
+            // ----- CALL STACK (manual using array) -----
+            let callStack = [];
+
+            function pushStack(funcName) {
+                callStack.push(funcName);
+                output += "Push: " + funcName + "<br>";
+            }
+
+            function popStack() {
+                let removed = callStack.pop();
+                output += "Pop: " + removed + "<br>";
+            }
+
+            // ----- Object -----
+            pushStack("Object Creation");
+
+            let student = {
+                name: "Ali",
+                age: 16,
+                class: "10th"
+            };
+
+            output += "<br><b>Object Data:</b><br>";
+            output += "Name: " + student.name + "<br>";
+            output += "Age: " + student.age + "<br>";
+            output += "Class: " + student.class + "<br>";
+
+            popStack();
+
+            // ----- Array -----
+            pushStack("Array Operations");
+
+            let subjects = ["Math", "Physics", "Chemistry", "Biology"];
+
+            output += "<br><b>Array using index:</b><br>";
+            for (let i = 0; i < subjects.length; i++) {
+                output += "Index " + i + ": " + subjects[i] + "<br>";
+            }
+
+            // pop()
+            let removed = subjects.pop();
+            output += "<br>After pop(): Removed = " + removed + "<br>";
+
+            // join()
+            let joined = subjects.join(", ");
+            output += "Array using join(): " + joined + "<br>";
+
+            popStack();
+
+            // ----- Call Stack Explanation -----
+            output += "<br><b>About Call Stack:</b><br>";
+            output += "Call stack is a data structure that follows LIFO (Last In First Out). ";
+            output += "It stores function calls. When a function is called, it is pushed into the stack, ";
+            output += "and when it finishes, it is popped out of the stack.";
+
+            // Display all
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+
+</body>
+</html>
