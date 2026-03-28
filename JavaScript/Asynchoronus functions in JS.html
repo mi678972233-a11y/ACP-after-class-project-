@@ -1,0 +1,22 @@
+!DOCTYPE html>
+<html>
+    <body>
+        <h2>Asynchronous functions in JS</h2>
+        <p id="result"></p> 
+        <script>
+                // Asynchronous function that returns a promise
+                async function fetchData() {
+                    return "Data received from server";
+                }
+                
+                // Function dependent on asynchronous function's result
+                async function processData() {
+                    var result = await fetchData();  // Wait for async function to complete
+                    document.getElementById("result").innerHTML = result;
+                }
+                
+                // Call the function
+                processData();
+        </script>        
+    </body>
+</html>
