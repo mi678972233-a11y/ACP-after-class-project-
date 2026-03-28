@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops</title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color:green">Codingal Education</h1>
+            <h3>Random Numbers using While Loop</h3>
+            <p id="demo"></p>
+            <script>
+
+let randomNumbers = "";
+let count = 0;
+let numberOfRandomNumbers = 10; 
+
+
+while(count < numberOfRandomNumbers) {
+    
+    let randomNum = Math.floor(Math.random() * 100) + 1;
+    randomNumbers += randomNum + "<br>";
+    count++; 
+}
+
+// Display the random numbers
+document.getElementById("demo").innerHTML = randomNumbers;
+            </script>
+        </center>
+    </body>
+</html>
