@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trigonometric Calculator</title>
+</head>
+<body>
+
+    <h2>Trigonometric Values Calculator</h2>
+
+    <label>Enter angle in degrees:</label>
+    <input type="number" id="degree" placeholder="Enter degree">
+    <button onclick="calculate()">Calculate</button>
+
+    <h3>Results:</h3>
+    <p id="sin"></p>
+    <p id="cos"></p>
+    <p id="tan"></p>
+    <p id="sum"></p>
+
+    <script>
+        // Convert degree to radian
+        function toRadian(degree) {
+            return degree * (Math.PI / 180);
+        }
+
+        // Get trig values
+        function trigValues(degree) {
+            let rad = toRadian(degree);
+
+            let sin = Math.sin(rad);
+            let cos = Math.cos(rad);
+            let tan = Math.tan(rad);
+
+            return { sin, cos, tan };
+        }
+
+        // Calculate and display
+        function calculate() {
+            let degree = document.getElementById("degree").value;
+
+            let values = trigValues(degree);
+
+            document.getElementById("sin").innerHTML = "sin = " + values.sin;
+            document.getElementById("cos").innerHTML = "cos = " + values.cos;
+            document.getElementById("tan").innerHTML = "tan = " + values.tan;
+
+            let sum = values.sin + values.cos + values.tan;
+            document.getElementById("sum").innerHTML = "Sum = " + sum;
+        }
+    </script>
+
+</body>
+</html>
