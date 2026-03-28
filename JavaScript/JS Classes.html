@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Classes</h1>
+        <p>How To Use A JavaScript Class With Static Method And Inheritance.</p>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <p id="graduate1"></p>
+        <script>
+            // Creating a class with a static method
+            class Student {
+                constructor(name, year) {
+                    this.name = name;
+                    this.year = year;
+                }
+                
+                // Instance method
+                age() {
+                    let date = new Date();
+                    return date.getFullYear() - this.year;
+                }
+                
+                // Static method
+                static schoolName() {
+                    return "Codingal High School";
+                }
+            }
+            
+            // Inheriting the class (creating a subclass)
+            class GraduateStudent extends Student {
+                constructor(name, year, degree) {
+                    super(name, year); // Call parent class constructor
+                    this.degree = degree;
+                }
+                
+                // Additional method for graduate student
+                getDegree() {
+                    return this.degree;
+                }
+                
+                // Override or extend the display method
+                getDetails() {
+                    return "My Name Is " + this.name + ". I was Born In " + this.year + 
+                           " and I am " + this.age() + " years old. I am pursuing " + this.degree + 
+                           " at " + Student.schoolName(); // Accessing static method
+                }
+            }
+            
+            // Using the base class
+            const student1 = new Student("M.Ibrahim", 2009);
+            document.getElementById("student1").innerHTML = "Student 1: My Name Is " + student1.name + 
+                ". I was Born In " + student1.year + " and I am " + student1.age() + 
+                " years old. School: " + Student.schoolName(); // Accessing static method
+            
+            const student2 = new Student("Sara", 1995);
+            document.getElementById("student2").innerHTML = "Student 2: My Name Is " + student2.name + 
+                ". I was Born In " + student2.year + " and I am " + student2.age() + 
+                " years old. School: " + Student.schoolName(); // Accessing static method
+            
+            // Using the inherited class
+            const graduate1 = new GraduateStudent("Mike", 1998, "Computer Science");
+            document.getElementById("graduate1").innerHTML = "Graduate Student: " + graduate1.getDetails();
+        </script>
+    </body>
+</html>
