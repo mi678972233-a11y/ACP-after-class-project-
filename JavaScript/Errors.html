@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Try and Catch Error Handling</h1>
+        <p id="result"></p>
+        
+        <script>
+              try {
+                // Creating an error
+                let num = 250;
+                if(num > 5) {
+                    throw new Error("Number is too large!");
+                }
+                document.getElementById("result").innerHTML = "Success!";
+            }
+            catch(error) {
+                // Display error message
+                document.getElementById("result").innerHTML = "Error: " + error.message;
+            }
+        </script>
+    </body>
