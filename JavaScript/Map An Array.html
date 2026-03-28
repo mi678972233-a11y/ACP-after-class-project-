@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Multiply Every Element In The Array By 10:</p>
+        <p id="original_array"></p>
+        <p id="mapped_array"></p>
+        <p id="ascending_order"></p>
+        <p id="descending_order"></p>
+        <script>
+            var numbers = [28, 6, 19, 95];
+            
+            // Display original array
+            document.getElementById("original_array").innerHTML = "Original Array: " + numbers;
+            
+            // Map array - multiply by 10
+            var mappedArray = numbers.map(function(num) {
+                return num * 10;
+            });
+            document.getElementById("mapped_array").innerHTML = "Mapped Array (×10): " + mappedArray;
+            
+            // Sort in ascending order
+            var ascending = [...mappedArray].sort(function(a, b) {
+                return a - b;
+            });
+            document.getElementById("ascending_order").innerHTML = "Ascending Order: " + ascending;
+            
+            // Sort in descending order
+            var descending = [...mappedArray].sort(function(a, b) {
+                return b - a;
+            });
+            document.getElementById("descending_order").innerHTML = "Descending Order: " + descending;
+        </script>
+    </body>
+</html>
