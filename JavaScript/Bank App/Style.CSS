@@ -1,0 +1,77 @@
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+}
+
+/* Container */
+.container{
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Balance */
+.balance{
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Income & Expense */
+.summary{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.income, .expense{
+    width: 45%;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.income p{
+    color: lightgreen;
+}
+
+.expense p{
+    color: red;
+}
+
+/* Form */
+.form input, .form select{
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.form button{
+    padding: 10px;
+    width: 95%;
+    background-color: #f2a900;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form button:hover{
+    background-color: orange;
+}
+
+/* List */
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background-color: #222;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
