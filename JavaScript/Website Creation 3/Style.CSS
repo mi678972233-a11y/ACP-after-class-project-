@@ -1,0 +1,45 @@
+/* Page background */
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Social container */
+.social-container{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Heading */
+.social-container h1{
+    color: #f2a900;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+.social-container p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Links */
+.social-icons a{
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #f2a900;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.social-icons a:hover{
+    background-color: #f2a900;
+    color: black;
+}
