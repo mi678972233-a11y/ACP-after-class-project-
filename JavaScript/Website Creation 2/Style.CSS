@@ -1,0 +1,49 @@
+/* Section */
+.section{
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    background-color: #111;
+}
+
+.section h1{
+    font-size: 32px;
+    color: #f2a900;
+}
+
+.section p{
+    font-size: 18px;
+}
+
+/* Portfolio */
+.portfolio{
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    background-color: #1a1a1a;
+}
+
+.portfolio h2{
+    color: #f2a900;
+    margin-bottom: 30px;
+}
+
+/* Items layout */
+.portfolio-items{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Each item */
+.item img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.item p{
+    margin-top: 10px;
+    color: white;
+}
